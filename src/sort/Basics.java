@@ -1,11 +1,11 @@
-package leetcode.easy.sorting;
+package sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class IntArrayCustomSort {
+public class Basics {
     public static void main(String[] args) {
         int[] ia = {99, 11, 7, 21, 4, 2};
         ia = Arrays.stream(ia).
@@ -28,5 +28,10 @@ public class IntArrayCustomSort {
             return ele1-ele2;
         });
         arr.stream().forEach(System.out::println);
+
+        Integer[] intArr = new Integer[]{5,4,7,9,6,3,2,34,56};
+        Arrays.sort(intArr);
+        Arrays.stream(intArr).forEach(System.out::println);
+//        Integer[] intArrModified = Arrays.stream(intArr).sorted().mapToInt(i -> i).toArray();
     }
 }
